@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container > div {
+  margin: 10px;
+  padding: 5px;
+}
+
+.container > p {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.container > input {
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #1c88f5;
+  box-shadow: none;
+  transition: box-shadow 500ms ease-in-out, transfrom 500ms ease-in-out;
+}
+
+.container > input:hover {
+  outline-style: dotted;
+  outline-color: blue;
+  outline-width: 0.1234px;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+.container > input:focus {
+  outline: none;
+  border: 1px solid #1c88f5;
+}
+
+.chat-response {
+  text-align: center;
+  width: 300px;
+  min-height: 200px;
+}
+
+.container > button {
+  width: 200px;
+  padding: 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .chat-response {
+    /* outline-style: dashed;
+    outline-width: thin; */
+    color: white;
+    width: 600px;
+    min-height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .chat-response {
+    /* outline-style: dashed;
+    outline-width: thin; */
+    color: white;
+    width: 900px;
+    min-height: 200px;
+  }
+}
